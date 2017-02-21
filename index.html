@@ -19,28 +19,23 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 /* First image (Logo. Full height) */
 .bgimg-1 {
     background-image: url('triangle.gif');
     min-height: 100%;
 }
-
 /* Second image (Portfolio) */
 .bgimg-2 {
     background-image: url("triangular.png");
     min-height: 400px;
 }
-
 /* Third image (Contact) */
 .bgimg-3 {
     background-image: url("triangular.png");
     min-height: 400px;
 }
-
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
-
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -198,6 +193,8 @@ body, html {
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iTJR5FWg15c" frameborder="0" allowfullscreen></iframe>
 <video controls src="PinkAndWhite.mp4" type="video/mp4" width="560" height="315" onclick= "this.play();"></video>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hIN5jQEDH2s" frameborder="0" allowfullscreen></iframe>
+<video controls src="finalproject.mov" type="video/mov" width="560" height="315" onclick= "this.play();"></video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RMrnGqOwkQA" frameborder="0" allowfullscreen></iframe>
 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Y3OJp51rPmA" frameborder="0" allowfullscreen></iframe> -->
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_d4weI3pV4w" frameborder="0" allowfullscreen></iframe>
   </div>
@@ -272,7 +269,6 @@ body, html {
 <script>
 <!-- Google Map Location -->
 var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-
 function initialize() {
 var mapProp = {
   center: myCenter,
@@ -281,18 +277,13 @@ var mapProp = {
   draggable: false,
   mapTypeId: google.maps.MapTypeId.ROADMAP
   };
-
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
 var marker = new google.maps.Marker({
   position: myCenter,
 });
-
 marker.setMap(map);
 }
-
 google.maps.event.addDomListener(window, 'load', initialize);
-
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
@@ -300,7 +291,6 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
-
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
 function myFunction() {
@@ -320,7 +310,6 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
-
 </script>
 
 </body>
